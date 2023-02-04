@@ -211,52 +211,94 @@
             height: 450px;
             display: flex;
             justify-content: center;
-            border: 1px solid red;
-            background-color:#f9f9f9;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            background-color: #f9f9f9;
         }
-
+        
         #my-about-left {
             height: 250px;
-            width: 500px;
-            border: 1px solid red;
+            width: 400px;
+            border: 1px solid grey;
             margin-top: 100px;
+            border-radius: 20px;
         }
 
         #my-about-left>h1 {
-            border: 1px solid red;
+            border-bottom: 1px solid grey;
+            /* margin-left: 10px; */
+            margin-top: 20px;
+            height: 60px;
         }
+        #my-about-left>table,tr {
+            /* border: 1px solid red; */
+            width: 50%;
 
-        #my-about-left>table {
-            border: 1px solid red;
         }
-
-        #my-about-left>table,
-        tr,
-        td {
-            border: 1px solid red;
-        }
-
         #my-about-right {
             height: 250px;
             width: 500px;
-            border: 1px solid red;
             margin-top: 100px;
             display: flex;
+            justify-content: space-around;
+            margin-left: 40PX;
         }
-
-        #my-about-right>div {
-            width: 500px;
-        }
-
-        #my-about-right>div>div:nth-child(1) {
+        #about-left>div:nth-child(1){
             height: 125px;
-            border-bottom: 1px solid grey;
+            /* border-bottom: 1px solid grey; */
         }
-
-        #my-about-right>div:nth-child(1) {
-            border-right: 1px solid grey;
+        #about-right>div:nth-child(2){
+            /* border-top: 1px solid grey;         */
         }
-
+        #about-left>div:nth-child(1)>h1{
+            font-size: 50px;
+            padding: 20px;
+        }
+        #about-left>div:nth-child(1)>p{
+            margin-top: -20px;
+            margin-left: 15px;
+        }
+        #about-left>div:nth-child(2)>h1{
+            font-size: 50px;
+            padding: 20px;
+        }
+        #about-left>div:nth-child(2)>p{
+            margin-top: -20px;
+            margin-left: 15px;
+        }
+        #about-right>div:nth-child(1)>h1{
+            font-size: 50px;
+            padding: 20px;
+        }
+        #about-right>div:nth-child(1)>p{
+            margin-top: -20px;
+            margin-left: 5px;
+        }
+        #about-right>div:nth-child(2)>h1{
+            font-size: 50px;
+            padding: 20px;
+        }
+        #about-right>div:nth-child(2)>p{
+            margin-top: -20px;
+            margin-left: 15px;
+        }
+        #about-left{
+            width: 230px;
+            /* border-right: 1px solid grey; */
+        }
+        #about-right{
+            width: 200px;
+            border-width: ;
+        }
+        #about-right>div:nth-child(1){
+            height: 125px;
+        }
+        #about-left>div>p{
+            color: #13af83;
+        }
+        #about-right>div>p{
+            color: #13af83;
+        }
         #company {
             height: 300px;
         }
@@ -288,10 +330,969 @@
         #company>div:nth-child(2)>img:hover {
             font-weight: 400;
         }
-        #my-services{
-            height: 500px;
-            border: 1px solid red;
+
+        #my-services {
+            height: 1500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
         }
+
+        #my-services-top {
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+            height: 170px;
+            width: 1000px;
+            background-color: #13af83;
+            margin-top: 150px;
+        }
+
+        #my-services-top>img {
+            height: 140px;
+            width: 140px;
+            border-radius: 70px;
+            margin-top: 15px;
+        }
+
+        #my-services-top>h1 {
+            margin-top: 50px;
+            margin-left: 30px;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        #my-services-bottom {
+            height: 1130px;
+            width: 1000px;
+            display: flex;
+        }
+
+        #my-services-left {
+            width: 900px;
+        }
+
+        #my-services-right {
+            width: 900px;
+            margin-left: 40px;
+        }
+
+        #my-services-left-first {
+            height: 450px;
+            margin-top: 100px;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #my-services-left-first:hover {
+            height: 450px;
+            margin-top: 100px;
+            border: 2px solid #13af83;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #website {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(180, 178, 178);
+        }
+
+        #website>div {
+            margin-top: 50px;
+        }
+
+        #website>div>p {
+            height: 30px;
+            width: 90px;
+            background-color: #535da1;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            padding: 5px;
+            font-size: 18px;
+            margin-top: 12px;
+        }
+
+        #website2 {
+            margin-top: 40px;
+            font-size: 20px;
+            padding-left: 55px;
+            color: gray;
+        }
+
+        #website2>div:nth-child(2) {
+            margin-top: 25px;
+        }
+
+        #website2>div:nth-child(2)>button {
+            height: 50px;
+            width: 150px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: 1px solid rgb(180, 178, 178);
+            background-color: #fff;
+            color: gray;
+        }
+
+        #website2>div:nth-child(3) {
+            margin-top: 40px;
+        }
+
+        #website2>div:nth-child(3)>div {
+            height: 151px;
+            width: 150px;
+            border: 1px solid rgb(180, 178, 178);
+            border-bottom: none;
+            margin-left: 110px;
+        }
+
+        #website2>div:nth-child(3)>div:hover {
+            height: 150px;
+            width: 150px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #website2>div:nth-child(3)>div>i {
+            font-size: 100px;
+            color: black;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        #website2>div:nth-child(3)>div>i:hover {
+            color: #fff;
+        }
+
+        #my-services-left-second {
+            height: 450px;
+            margin-top: 40px;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #my-services-left-second:hover {
+            height: 450px;
+            margin-top: 40px;
+            border: 2px solid #13af83;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #ecommerce {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(180, 178, 178);
+        }
+
+        #ecommerce>div {
+            margin-top: 50px;
+        }
+
+        #ecommerce>div>p {
+            height: 30px;
+            width: 90px;
+            background-color: #535da1;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            padding: 5px;
+            font-size: 18px;
+            margin-top: 12px;
+        }
+
+        #ecommerce2 {
+            margin-top: 40px;
+            font-size: 20px;
+            padding-left: 55px;
+            color: gray;
+        }
+
+        #ecommerce2>div:nth-child(2) {
+            margin-top: 25px;
+        }
+
+        #ecommerce2>div:nth-child(2)>button {
+            height: 50px;
+            width: 150px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: 1px solid rgb(180, 178, 178);
+            background-color: #fff;
+            color: gray;
+        }
+
+        #ecommerce2>div:nth-child(3) {
+            margin-top: 40px;
+        }
+
+        #ecommerce2>div:nth-child(3)>div {
+            height: 151px;
+            width: 150px;
+            border: 1px solid rgb(180, 178, 178);
+            border-bottom: none;
+            margin-left: 110px;
+        }
+
+        #ecommerce2>div:nth-child(3)>div:hover {
+            height: 150px;
+            width: 150px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #ecommerce2>div:nth-child(3)>div>i {
+            font-size: 100px;
+            color: black;
+            margin-top: 25px;
+            margin-left: 36px;
+        }
+
+        #ecommerce2>div:nth-child(3)>div>i:hover {
+            color: #fff;
+        }
+
+        #my-services-right-first {
+            height: 450px;
+            margin-top: 50px;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #my-services-right-first:hover {
+            height: 450px;
+            margin-top: 50px;
+            border: 2px solid #13af83;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #branding {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(180, 178, 178);
+        }
+
+        #branding>div {
+            margin-top: 50px;
+        }
+
+        #branding>div>p {
+            height: 30px;
+            width: 90px;
+            background-color: #535da1;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            padding: 5px;
+            font-size: 18px;
+            margin-top: 12px;
+        }
+
+        #branding2 {
+            margin-top: 40px;
+            font-size: 20px;
+            padding-left: 55px;
+            color: gray;
+        }
+
+        #branding2>div:nth-child(2) {
+            margin-top: 25px;
+        }
+
+        #branding2>div:nth-child(2)>button {
+            height: 50px;
+            width: 150px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: 1px solid rgb(180, 178, 178);
+            background-color: #fff;
+            color: grey;
+        }
+
+        #branding2>div:nth-child(3) {
+            margin-top: 25px;
+        }
+
+        #branding2>div:nth-child(3)>div {
+            height: 144px;
+            width: 150px;
+            border: 1px solid rgb(180, 178, 178);
+            border-bottom: none;
+            margin-left: 110px;
+        }
+
+        #branding2>div:nth-child(3)>div:hover {
+            height: 142px;
+            width: 150px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #branding2>div:nth-child(3)>div>i {
+            font-size: 100px;
+            color: black;
+            margin-top: 20px;
+            margin-left: 36px;
+        }
+
+        #branding2>div:nth-child(3)>div>i:hover {
+            color: #fff;
+        }
+
+        #my-services-right-second {
+            height: 450px;
+            margin-top: 40px;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #my-services-right-second:hover {
+            height: 450px;
+            margin-top: 40px;
+            border: 2px solid #13af83;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+
+        #seo {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(180, 178, 178);
+        }
+
+        #seo>div {
+            margin-top: 50px;
+        }
+
+        #seo>div>p {
+            height: 30px;
+            width: 90px;
+            background-color: #535da1;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            padding: 5px;
+            font-size: 18px;
+            margin-top: 12px;
+        }
+
+        #seo2 {
+            margin-top: 40px;
+            font-size: 20px;
+            padding-left: 55px;
+            color: gray;
+        }
+
+        #seo2>div:nth-child(2) {
+            margin-top: 25px;
+        }
+
+        #seo2>div:nth-child(2)>button {
+            height: 50px;
+            width: 150px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: 1px solid rgb(180, 178, 178);
+            background-color: #fff;
+            color: gray;
+        }
+
+        #seo2>div:nth-child(3) {
+            margin-top: 25px;
+        }
+
+        #seo2>div:nth-child(3)>div {
+            height: 143px;
+            width: 150px;
+            border: 1px solid rgb(180, 178, 178);
+            border-bottom: none;
+            margin-left: 110px;
+        }
+
+        #seo2>div:nth-child(3)>div:hover {
+            height: 143px;
+            width: 150px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #seo2>div:nth-child(3)>div>i {
+            font-size: 80px;
+            color: black;
+            margin-top: 30px;
+            margin-left: 36px;
+        }
+
+        #seo2>div:nth-child(3)>div>i:hover {
+            color: #fff;
+        }
+
+        #my-projects {
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #my-projects-top {
+            display: flex;
+            justify-content: center;
+            margin-top: 160px;
+            margin-left: 500px;
+            height: 170px;
+            width: 700px;
+            border-radius: 15px;
+            background-color: #13af83;
+        }
+
+        #my-projects-top>img {
+            height: 140px;
+            width: 140px;
+            border-radius: 70px;
+            margin-top: 15px;
+        }
+
+        #my-projects-top>h1 {
+            font-size: 50px;
+            margin-top: 50px;
+            margin-left: 20px;
+            color: #fff;
+        }
+
+        #my-projects-bottom {
+            display: flex;
+            justify-content: space-between;
+            height: 500px;
+            width: 1200px;
+        }
+
+        #branding3 {
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 360px;
+            margin-top: 50px;
+            background-color: #f9f9f9;
+        }
+
+        #branding3:hover {
+            height: 450px;
+            width: 360px;
+            border: 2px solid #13af83;
+        }
+
+        #branding3>div:nth-child(1) {
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        #branding3>div:nth-child(1)>h6 {
+            color: #13af83;
+        }
+
+        #branding3>div:nth-child(2) {
+            margin-left: 50px;
+            margin-top: 60px;
+        }
+
+        #branding3>div:nth-child(2)>img {
+            height: 250px;
+            width: 260px;
+            border-radius: 20px;
+        }
+
+        #photography {
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 360px;
+            margin-top: 50px;
+            border-radius: 15px;
+            background-color: #f9f9f9;
+        }
+
+        #photography:hover {
+            height: 450px;
+            width: 360px;
+            border: 2px solid #13af83;
+        }
+
+        #photography>div:nth-child(1) {
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        #photography>div:nth-child(1)>h6 {
+            color: #13af83;
+        }
+
+        #photography>div:nth-child(2) {
+            margin-left: 50px;
+            margin-top: 60px;
+        }
+
+        #photography>div:nth-child(2)>img {
+            height: 250px;
+            width: 260px;
+            border-radius: 20px;
+        }
+
+        #website3 {
+            border-radius: 15px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 360px;
+            margin-top: 50px;
+        }
+
+        #website3:hover {
+            height: 450px;
+            width: 360px;
+            border: 2px solid #13af83;
+        }
+
+        #website3>div:nth-child(1) {
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        #website3>div:nth-child(1)>h6 {
+            color: #13af83;
+        }
+
+        #website3>div:nth-child(2) {
+            margin-left: 50px;
+            margin-top: 60px;
+        }
+
+        #website3>div:nth-child(2)>img {
+            height: 250px;
+            width: 260px;
+            border-radius: 20px;
+        }
+
+        #my-contact {
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        #my-contact-left {
+            width: 600px;
+            height: 800px;
+            margin-top: 200px;
+        }
+        #my-contact-left-top {
+            height: 150px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            background-color: #13af83;
+            border-radius: 20px;
+        }
+
+        #my-contact-left-top>img {
+            height: 130px;
+            width: 130px;
+            border-radius: 65px;
+            margin-top: 10px;
+        }
+
+        #my-contact-left-top>h1 {
+            margin-top: 45px;
+            margin-left: 20px;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom {
+            width: 600px;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            background-color: #fff;
+        }
+
+        #my-contact-left-bottom-left {
+            width: 350px;
+            height: 400px;
+            background-color: white;
+            border-right: 1px solid grey;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1) {
+            height: 150px;
+            width: 200px;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div {
+            margin-top: 15px;
+
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(1) {
+            height: 40px;
+            width: 90px;
+            border: none;
+            border-radius: 20px;
+            background-color: #fff;
+            border: 1px solid grey;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(1):hover {
+            height: 40px;
+            width: 90px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(2) {
+            height: 40px;
+            width: 90px;
+            margin-left: 15px;
+            border: none;
+            border-radius: 20px;
+            background-color: #fff;
+            border: 1px solid grey;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(2):hover {
+            height: 40px;
+            width: 90px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(3) {
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 20px;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid grey;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(3):hover {
+            height: 40px;
+            width: 100px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(4) {
+            height: 40px;
+            width: 60px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 15px;
+            background-color: #fff;
+            border: 1px solid grey;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(1)>div>button:nth-child(4):hover {
+            height: 40px;
+            width: 60px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2) {
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div {
+            margin-top: 15px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(1) {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: 1px solid grey;
+            padding: 12px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(1):hover {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(2) {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: 1px solid grey;
+            padding: 12px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(2):hover {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(3) {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: 1px solid grey;
+            padding: 12px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(3):hover {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(4) {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: 1px solid grey;
+            padding: 11px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(2)>div>i:nth-child(4):hover {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #13af83;
+            color: #fff;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(3) {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        #my-contact-left-bottom-left>div:nth-child(3)>p {
+            margin-top: 10px;
+        }
+
+        #my-contact-left-bottom-right {
+            width: 350px;
+            height: 400px;
+            background-color: white;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(1) {
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(1)>p {
+            margin-top: 15px;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(2) {
+            margin-top: 90px;
+            margin-left: 30px;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(2)>p {
+            margin-top: 15px;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(2)>p:hover {
+            color: #13af83;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(3) {
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(3)>p {
+            margin-top: 15px;
+        }
+
+        #my-contact-left-bottom-right>div:nth-child(3)>p:hover {
+            color: #13af83;
+        }
+
+        #my-contact-left-bottom-right {
+            width: 350px;
+            height: 400px;
+        }
+
+        #my-contact-right {
+            width: 485px;
+            height: 400px;
+            margin-top: 200px;
+            margin-left: 40px;
+        }
+
+        #register {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #register>div:nth-child(1)>input {
+            height: 50px;
+            width: 230px;
+            border: 2px solid gray;
+        }
+        #register>div:nth-child(1)>input:hover {
+            height: 50px;
+            width: 230px;
+            border: 2px solid #13af83;
+        }
+        
+        #register>div:nth-child(2)>input {
+            height: 50px;
+            width: 230px;
+            border: 2px solid gray;
+        }
+        #register>div:nth-child(2)>input:hover {
+            height: 50px;
+            width: 230px;
+            border: 2px solid #13af83;
+        }
+        
+        #logo {
+            margin-top: 30px;
+            display: flex;
+        }
+        #logo>div{
+            background-color: #fff;
+        }
+        #logo>div:nth-child(1){
+            height: 70px;
+            width: 100px;
+            border: 2px solid gray;
+        }
+        #logo>div:nth-child(1)>i{
+            margin-top: 20px;
+            margin-left: 40px;
+            color: #13af83;
+        }
+        #logo>div:nth-child(1):hover{
+            height: 70px;
+            width: 100px;
+            border: 2px solid #13af83;
+        }
+        #logo>div:nth-child(1)>p{
+            margin-left: 25px;
+        }
+        #logo>div:nth-child(2) {
+            margin-left: 30px;
+            height: 70px;
+            width: 100px;
+            border: 2px solid gray;
+        }
+        #logo>div:nth-child(2):hover{
+            height: 70px;
+            width: 100px;
+            border: 2px solid #13af83;
+        }
+        #logo>div:nth-child(2)>i{
+            margin-top: 18px;
+            margin-left: 40px;
+            color: #13af83;
+        }
+        #logo>div:nth-child(2)>p{
+            margin-left: 20px;
+        }
+        #logo>div:nth-child(3) {
+            margin-left: 30px;
+            height: 70px;
+            width: 100px;
+            border: 2px solid gray;
+        }
+        #logo>div:nth-child(3):hover{
+            height: 70px;
+            width: 100px;
+            border: 2px solid #13af83;
+        }
+        #logo>div:nth-child(3)>i{
+            margin-top: 18px;
+            margin-left: 45px;
+            color: #13af83;
+        }
+        #logo>div:nth-child(3)>p{
+            margin-left: 12px;
+        }
+        #logo>div:nth-child(4) {
+            margin-left: 30px;
+            height: 70px;
+            width: 100px;
+            border: 2px solid gray;
+        }
+        #logo>div:nth-child(4):hover{
+            height: 70px;
+            width: 100px;
+            border: 2px solid #13af83;
+        }
+        #logo>div:nth-child(4)>i{
+            margin-top: 18px;
+            margin-left: 40px;
+            color: #13af83;
+        }
+        #logo>div:nth-child(4)>p{
+            margin-left: 32px;
+        }
+        #message{
+            margin-top: 30px;
+        }
+        #message>div>input{
+            height: 100px;
+            width: 485px;
+            border: 2px solid gray;
+        }
+        #message>div>input:hover{
+            height: 100px;
+            width: 485px;
+            border: 2px solid #13af83;
+        }
+        #message>div>div{
+            margin-top: 30px;
+            text-align: right;
+        }
+        #message>div>div>button{
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            border: none;
+            background-color: #13af83;
+            color: #fff;
+            font-size: medium;
+        }
+        #message>div>div>button:hover{
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            background-color: #535da1;
+            color: #fff;
+            font-size: medium;
+        }
+
     </style>
 </head>
 
@@ -367,12 +1368,12 @@
                 <h1>Information</h1>
                 <table id="table">
                     <!-- <div> -->
-                    <tr>
+                    <tr id="row">
                         <td>Name:</td>
                         <td>Joshua Morgan</td>
                     </tr>
 
-                    <tr>
+                    <tr bgcolor="#fff">
                         <td>Birthday:</td>
                         <td>Aug 12, 1986</td>
                     </tr>
@@ -380,7 +1381,7 @@
                         <td>Phone:</td>
                         <td>120-240-9600</td>
                     </tr>
-                    <tr>
+                    <tr bgcolor="#fff">
                         <td>Email:</td>
                         <td>hello@josh.design</td>
                     </tr>
@@ -416,78 +1417,223 @@
             </div>
             <div>
                 <img src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/cachet.svg">
-                <img src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/guitar-center.svg">
+                <img
+                    src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/guitar-center.svg">
                 <img src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/tokico.svg">
                 <img src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/shopify.svg">
-                <img src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/profil-rejser.svg">
+                <img
+                    src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/profil-rejser.svg">
             </div>
         </div>
         <div id="my-services">
             <div id="my-services-top">
-                <img src="">
-                <h1></h1>
+                <img
+                    src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/handshake-man-woman-after-signing-business-contract-closeup.jpg">
+                <h1>Services</h1>
             </div>
             <div id="my-services-bottom">
                 <div id="my-services-left">
                     <div id="my-services-left-first">
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div></div>
+                        <div id="website">
                             <div>
-                                <div></div>
+                                <h1>Websites</h1>
+                            </div>
+                            <div>
+                                <p>$2,400</p>
+                            </div>
+                        </div>
+                        <div id="website2">
+                            <div>
+                                <p>You may want to explore Too CSS for great collection of free HTML CSS templates.</p>
+                            </div>
+                            <div><button>Discover More</button></div>
+                            <div>
+                                <div><i class="fa-solid fa-globe"></i></div>
                             </div>
                         </div>
                     </div>
                     <div id="my-services-left-second">
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div></div>
+                        <div id="ecommerce">
                             <div>
-                                <div></div>
+                                <h1>Ecommerce</h1>
+                            </div>
+                            <div>
+                                <p>$3,600</p>
+                            </div>
+                        </div>
+                        <div id="ecommerce2">
+                            <div>
+                                <p>If you need a customized ecommerce website for your business, feel free to discuss
+                                    with me.</p>
+                            </div>
+                            <div><button>Discover More</button></div>
+                            <div>
+                                <div><i class="fa-solid fa-mobile-screen-button"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="my-services-right">
                     <div id="my-services-right-first">
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div></div>
+                        <div id="branding">
                             <div>
-                                <div></div>
+                                <h1>Branding</h1>
+                            </div>
+                            <div>
+                                <p>$1,200</p>
+                            </div>
+                        </div>
+                        <div id="branding2">
+                            <div>
+                                <p>You can explore more CSS templates on TemplateMo website by browsing through
+                                    different tags.</p>
+                            </div>
+                            <div><button>Discover More</button></div>
+                            <div>
+                                <div><i class="fa-regular fa-lightbulb"></i></div>
                             </div>
                         </div>
                     </div>
-                    <div  id="my-services-right-second">
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div></div>
+                    <div id="my-services-right-second">
+                        <div id="seo">
                             <div>
-                                <div></div>
+                                <h1>SEO</h1>
+                            </div>
+                            <div>
+                                <p>$1,450</p>
+                            </div>
+                        </div>
+                        <div id="seo2">
+                            <div>
+                                <p>To list your website first on any search engine, we will work together. First
+                                    Portfolio is one-page CSS Template for free download.</p>
+                            </div>
+                            <div><button>Discover More</button></div>
+                            <div>
+                                <div><i class="fa-brands fa-google"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div></div>
-        <div></div>
+        <div id="my-projects">
+            <div id="my-projects-top">
+                <img
+                    src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/white-desk-work-study-aesthetics.jpg">
+                <h1>Projects</h1>
+            </div>
+            <div id="my-projects-bottom">
+                <div id="branding3">
+                    <div>
+                        <h6>BRANDING</h6>
+                        <h1>Zoik agency</h1>
+                    </div>
+                    <div>
+                        <img
+                            src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/projects/nikhil-KO4io-eCAXA-unsplash.jpg">
+                    </div>
+                </div>
+                <div id="photography">
+                    <div>
+                        <h6>PHOTOGRAPHY</h6>
+                        <h1>The Watch</h1>
+                    </div>
+                    <div>
+                        <img
+                            src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/projects/the-5th-IQYR7N67dhM-unsplash.jpg">
+                    </div>
+                </div>
+                <div id="website3">
+                    <div>
+                        <h6>WEBSITE</h6>
+                        <h1>Polo</h1>
+                    </div>
+                    <div>
+                        <img
+                            src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-contact">
+            <div id="my-contact-left">
+                <div id="my-contact-left-top">
+                    <img
+                        src="https://templatemo.com/templates/templatemo_578_first_portfolio/images/aerial-view-man-using-computer-laptop-wooden-table.jpg">
+                    <h1>Say Hii</h1>
+                </div>
+                <div id="my-contact-left-bottom">
+                    <div id="my-contact-left-bottom-left">
+                        <div>
+                            <h5>SERVICES</h5>
+                            <div>
+                                <button>website</button>
+                                <button>Branding</button>
+                                <button>Ecommerce</button>
+                                <button>SEO</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>STAY CONNECTED</h5>
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>START PROJECT</h5>
+                            <p>I’m available for freelance projects</p>
+                        </div>
+                    </div>
+                    <div id="my-contact-left-bottom-right">
+                        <div>
+                            <h5>ABOUT</h5>
+                            <p>Joshua is a professional web developer. Feel free to get in touch with me.</p>
+                        </div>
+                        <div>
+                            <h5>EMAIL</h5>
+                            <p>hello@josh.design</p>
+                        </div>
+                        <div>
+                            <h5>CALL</h5>
+                            <p>120-240-9600</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="my-contact-right">
+                <div id="register">
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="email" placeholder="Email address"></div>
+                </div>
+                <div id="logo">
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <p>Website</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <p>Branding</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Ecommerce</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-google"></i>
+                        <p>SEO</p>
+                    </div>
+                </div>
+                <div id="message">
+                    <div><input type="text" placeholder="Tell me about the project" </div>
+                        <div><button>Send</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
