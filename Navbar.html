@@ -11,7 +11,6 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         #fullpage {
@@ -213,7 +212,7 @@
             justify-content: center;
             border-top: 1px solid grey;
             border-bottom: 1px solid grey;
-            background-color: #f9f9f9;
+            /* background-color: #f9f9f9; */
         }
         
         #my-about-left {
@@ -230,22 +229,35 @@
             margin-top: 20px;
             height: 60px;
         }
-        #my-about-left>table,tr {
-            /* border: 1px solid red; */
-            width: 50%;
-
+        #my-about-left>div{
+            height: 168px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        #my-about-left>div>table,tr{
+            height: 42px;
+            width: 400px;
+            border: 1px solid red;
+        }
+        #my-about-left>div>table,tr,td{
+              border: 1px solid red;
+              border-collapse: collapse;
+        }
+        #my-about-left>div>table,tr:nth-child(2),tr:nth-child(4){
+            background-color: #fff;
         }
         #my-about-right {
             height: 250px;
             width: 500px;
             margin-top: 100px;
             display: flex;
+            flex-direction: row;
             justify-content: space-around;
             margin-left: 40PX;
         }
         #about-left>div:nth-child(1){
             height: 125px;
-            /* border-bottom: 1px solid grey; */
+            border-bottom: 1px solid grey;
         }
         #about-right>div:nth-child(2){
             /* border-top: 1px solid grey;         */
@@ -280,18 +292,20 @@
         }
         #about-right>div:nth-child(2)>p{
             margin-top: -20px;
-            margin-left: 15px;
+            /* margin-left: 15px; */
         }
         #about-left{
             width: 230px;
-            /* border-right: 1px solid grey; */
+            border-right: 1px solid grey;
         }
         #about-right{
             width: 200px;
-            border-width: ;
+            margin-left: 0;
         }
         #about-right>div:nth-child(1){
             height: 125px;
+            border-bottom: 1px solid grey;
+            margin-left: 0;
         }
         #about-left>div>p{
             color: #13af83;
@@ -1366,14 +1380,15 @@
         <div id="my-about">
             <div id="my-about-left">
                 <h1>Information</h1>
+                <div>
                 <table id="table">
                     <!-- <div> -->
-                    <tr id="row">
+                    <tr>
                         <td>Name:</td>
                         <td>Joshua Morgan</td>
                     </tr>
 
-                    <tr bgcolor="#fff">
+                    <tr>
                         <td>Birthday:</td>
                         <td>Aug 12, 1986</td>
                     </tr>
@@ -1381,12 +1396,13 @@
                         <td>Phone:</td>
                         <td>120-240-9600</td>
                     </tr>
-                    <tr bgcolor="#fff">
+                    <tr>
                         <td>Email:</td>
                         <td>hello@josh.design</td>
                     </tr>
                     <!-- </div> -->
                 </table>
+                 </div>
             </div>
             <div id="my-about-right">
                 <div id="about-left">
@@ -1395,14 +1411,14 @@
                         <p>Years of Experiences</p>
                     </div>
                     <div>
-                        <h1>640</h1>
-                        <p>Project Finished</p>
+                        <h1>245</h1>
+                        <p>Happy customers</p>
                     </div>
                 </div>
                 <div id="about-right">
                     <div>
-                        <h1>245</h1>
-                        <p>Happy Customers</p>
+                        <h1>650</h1>
+                        <p>Project finished</p>
                     </div>
                     <div>
                         <h1>72+</h1>
